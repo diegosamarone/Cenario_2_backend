@@ -20,9 +20,7 @@ jobs:
         uses: actions/checkout@v3 # was "v2" before 
         with: 
           fetch-depth: 0
-      - name: Install nvm
-        run: |
-          nvm install 18.18.0
+          
       - name: Use Node.JS ${{ matrix.node-version }}
         uses: actions/setup-node@v3 # was "v2" before
         with: 
